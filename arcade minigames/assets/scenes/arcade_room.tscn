@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bgaqm8ofe133x"]
+
+[ext_resource type="Texture2D" uid="uid://xehsmkk2dnng" path="res://assets/sprites/altra roba.png" id="1_jdaj0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qfnj"]
+size = Vector2(23, 90)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmdxg"]
+size = Vector2(200, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwlxy"]
+size = Vector2(200, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4ntp"]
+size = Vector2(19, 88)
+
+[node name="arcade room" type="Node2D" unique_id=2036437118]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=300494870]
+
+[node name="muro destra" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1451033412]
+position = Vector2(112, 11)
+shape = SubResource("RectangleShape2D_4qfnj")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=30174457]
+texture = ExtResource("1_jdaj0")
+
+[node name="muro alto" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1286555423]
+position = Vector2(0, -41)
+shape = SubResource("RectangleShape2D_fmdxg")
+
+[node name="muro basso" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1627961876]
+position = Vector2(0, 62)
+shape = SubResource("RectangleShape2D_lwlxy")
+
+[node name="muro sinistra" type="CollisionShape2D" parent="CharacterBody2D" unique_id=502255528]
+position = Vector2(-109, 11)
+shape = SubResource("RectangleShape2D_p4ntp")

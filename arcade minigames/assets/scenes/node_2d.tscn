@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://cr83mdmnweiaq"]
 
+[ext_resource type="PackedScene" uid="uid://bgaqm8ofe133x" path="res://assets/scenes/arcade_room.tscn" id="1_200xw"]
+[ext_resource type="PackedScene" uid="uid://bv7im66owf4sl" path="res://assets/scenes/main_menu.tscn" id="2_mh6p6"]
+
 [node name="Node2D" type="Node2D" unique_id=807835721]
+
+[node name="arcade room" parent="." unique_id=2036437118 instance=ExtResource("1_200xw")]
+
+[node name="main menu" parent="." unique_id=1382200650 instance=ExtResource("2_mh6p6")]
+position = Vector2(0, 8)
+
+[node name="Camera2D" type="Camera2D" parent="main menu" unique_id=1791851889]
+position = Vector2(0, -8)
+scale = Vector2(0.5016793, 0.0031219635)
+zoom = Vector2(5.88, 6.36)
