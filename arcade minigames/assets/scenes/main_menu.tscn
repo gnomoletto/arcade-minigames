@@ -1,15 +1,19 @@
 [gd_scene format=3 uid="uid://bv7im66owf4sl"]
 
+[ext_resource type="Script" uid="uid://clsfnte6tmqij" path="res://assets/scripts/main_menu.gd" id="1_4hf8p"]
 [ext_resource type="Texture2D" uid="uid://ch10vfijtkehe" path="res://assets/sprites/sfondo menù.png" id="1_obrqb"]
 [ext_resource type="Texture2D" uid="uid://d0l82wv2cdrya" path="res://assets/sprites/scritta menù.png" id="2_57ux2"]
-[ext_resource type="Script" uid="uid://cdg1uk3sxr6a3" path="res://scritta_menù.gd" id="3_f2xsc"]
-[ext_resource type="Texture2D" uid="uid://dxhqgv557rm6j" path="res://assets/sprites/roba.png" id="4_57ux2"]
-[ext_resource type="Script" uid="uid://bsxcwcaxlw3bl" path="res://assets/scenes/play_button.gd" id="4_f2xsc"]
+[ext_resource type="Script" uid="uid://1rnb1v85j8it" path="res://assets/scripts/play.gd" id="4_uek13"]
 [ext_resource type="Texture2D" uid="uid://b2nyhvaf3v837" path="res://assets/sprites/playn.png" id="5_xmmar"]
 [ext_resource type="Texture2D" uid="uid://d2ijllke1206v" path="res://assets/sprites/playh.png" id="6_66en2"]
-[ext_resource type="Script" uid="uid://yywqbp30dixj" path="res://assets/scenes/options_button.gd" id="7_66en2"]
+[ext_resource type="Script" uid="uid://868xsg7nkvdl" path="res://assets/scripts/options.gd" id="6_xmmar"]
+[ext_resource type="Texture2D" uid="uid://b1gqcos04c62p" path="res://assets/sprites/optionsn.png" id="8_tp4c4"]
+[ext_resource type="Script" uid="uid://c3pya8anmtanp" path="res://assets/scripts/exit.gd" id="9_tp4c4"]
+[ext_resource type="Texture2D" uid="uid://diiu6n3cju2qf" path="res://assets/sprites/optionsh.png" id="9_uek13"]
+[ext_resource type="Texture2D" uid="uid://do6j07g5ikylw" path="res://assets/sprites/exitn.png" id="10_uek13"]
+[ext_resource type="Texture2D" uid="uid://bmy326nbd8x0u" path="res://assets/sprites/exith.png" id="11_fntub"]
 
-[sub_resource type="Animation" id="Animation_v71do"]
+[sub_resource type="Animation" id="Animation_57ux2"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -21,11 +25,11 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -25.000002)]
+"values": [Vector2(0, -25)]
 }
 
-[sub_resource type="Animation" id="Animation_xmmar"]
-resource_name = "wobble scritta"
+[sub_resource type="Animation" id="Animation_f2xsc"]
+resource_name = "bobbing"
 length = 3.0000000000000004
 loop_mode = 1
 tracks/0/type = "value"
@@ -35,116 +39,173 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.2967837),
+"times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, -38), Vector2(0, -32.000004)]
+"values": [Vector2(0, -25), Vector2(0, -20)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_66en2"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v71do"]
 _data = {
-&"RESET": SubResource("Animation_v71do"),
-&"wobble scritta": SubResource("Animation_xmmar")
+&"RESET": SubResource("Animation_57ux2"),
+&"bobbing": SubResource("Animation_f2xsc")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmdxg"]
-size = Vector2(19.875, 10)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_20yrs"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xmmar"]
-atlas = ExtResource("5_xmmar")
-region = Rect2(0, 0, 20, 10)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klref"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_66en2"]
-atlas = ExtResource("6_66en2")
-region = Rect2(0, 0, 20, 10)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xwb84"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_fmdxg"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xmmar")
-}],
-"loop": 1,
-"name": &"aaaaaaa",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_66en2")
-}],
-"loop": 1,
-"name": &"bbbbbbb",
-"speed": 5.0
-}]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etoar"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2xsc"]
-size = Vector2(42.9375, 10)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h3wjr"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v71do"]
-size = Vector2(20, 10)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2nj5q"]
 
-[node name="main menu" type="Node2D" unique_id=1382200650]
+[sub_resource type="Animation" id="Animation_fntub"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
-[node name="SfondoMenù" type="Sprite2D" parent="." unique_id=594478388]
-self_modulate = Color(1, 1, 1, 0.78039217)
-scale = Vector2(1.3043972, 1.2689304)
+[sub_resource type="Animation" id="Animation_4hf8p"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_k5f6t"]
+resource_name = "transizione"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k5f6t"]
+_data = {
+&"RESET": SubResource("Animation_fntub"),
+&"fade": SubResource("Animation_4hf8p"),
+&"transizione": SubResource("Animation_k5f6t")
+}
+
+[node name="main menu" type="Node2D" unique_id=982102240]
+script = ExtResource("1_4hf8p")
+
+[node name="sfondo menu" type="Sprite2D" parent="." unique_id=1264688698]
+modulate = Color(1, 1, 1, 0.6666667)
 texture = ExtResource("1_obrqb")
 
-[node name="ScrittaMenù" type="Sprite2D" parent="." unique_id=2028440297]
-position = Vector2(0, -25.000002)
-scale = Vector2(1.2000014, 1.2000014)
+[node name="arcade minigames" type="Sprite2D" parent="." unique_id=1587607920]
+position = Vector2(0, -25)
 texture = ExtResource("2_57ux2")
-script = ExtResource("3_f2xsc")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ScrittaMenù" unique_id=1811110084]
-libraries/ = SubResource("AnimationLibrary_66en2")
-autoplay = &"wobble scritta"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="arcade minigames" unique_id=1836784919]
+libraries/ = SubResource("AnimationLibrary_v71do")
+autoplay = &"bobbing"
 
-[node name="play button" type="CharacterBody2D" parent="." unique_id=1414971226]
-position = Vector2(10, 10)
-script = ExtResource("4_f2xsc")
+[node name="play" type="Button" parent="." unique_id=825294127]
+offset_left = -10.0
+offset_top = 3.0
+offset_right = 10.0
+offset_bottom = 13.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_20yrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_klref")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xwb84")
+icon = ExtResource("5_xmmar")
+script = ExtResource("4_uek13")
 
-[node name="Area2D" type="Area2D" parent="play button" unique_id=1498351590]
+[node name="TextureButton" type="TextureButton" parent="play" unique_id=1333462552]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+texture_normal = ExtResource("5_xmmar")
+texture_pressed = ExtResource("5_xmmar")
+texture_hover = ExtResource("6_66en2")
+stretch_mode = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="play button/Area2D" unique_id=720752484]
-position = Vector2(-10, -10)
-shape = SubResource("RectangleShape2D_fmdxg")
+[node name="options" type="Button" parent="." unique_id=1059352933]
+offset_left = -21.0
+offset_top = 16.0
+offset_right = 22.0
+offset_bottom = 26.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_20yrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_klref")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xwb84")
+icon = ExtResource("8_tp4c4")
+script = ExtResource("6_xmmar")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="play button" unique_id=521427918]
-position = Vector2(-10, -10)
-sprite_frames = SubResource("SpriteFrames_fmdxg")
-animation = &"bbbbbbb"
-autoplay = "aaaaaaa"
+[node name="TextureButton" type="TextureButton" parent="options" unique_id=897506518]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+texture_normal = ExtResource("8_tp4c4")
+texture_pressed = ExtResource("8_tp4c4")
+texture_hover = ExtResource("9_uek13")
+stretch_mode = 0
 
-[node name="options button" type="CharacterBody2D" parent="." unique_id=2109645601]
-position = Vector2(10, 23)
-script = ExtResource("7_66en2")
+[node name="exit" type="Button" parent="." unique_id=426074093]
+offset_left = -10.0
+offset_top = 29.0
+offset_right = 10.0
+offset_bottom = 39.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_etoar")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h3wjr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2nj5q")
+icon = ExtResource("10_uek13")
+script = ExtResource("9_tp4c4")
 
-[node name="Sprite2D" type="Sprite2D" parent="options button" unique_id=1745808419]
-position = Vector2(-10, -10)
-texture = ExtResource("4_57ux2")
-region_enabled = true
-region_rect = Rect2(7, 10, 43, 10)
+[node name="TextureButton" type="TextureButton" parent="exit" unique_id=606060944]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+texture_normal = ExtResource("10_uek13")
+texture_pressed = ExtResource("10_uek13")
+texture_hover = ExtResource("11_fntub")
+stretch_mode = 0
 
-[node name="Area2D" type="Area2D" parent="options button" unique_id=1282823804]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=603726860]
+libraries/ = SubResource("AnimationLibrary_k5f6t")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="options button/Area2D" unique_id=2113460094]
-position = Vector2(-10, -10)
-shape = SubResource("RectangleShape2D_f2xsc")
-
-[node name="exit button" type="CharacterBody2D" parent="." unique_id=585809379]
-position = Vector2(10, 36)
-
-[node name="Sprite2D" type="Sprite2D" parent="exit button" unique_id=2063009504]
-position = Vector2(-10, -10)
-texture = ExtResource("4_57ux2")
-region_enabled = true
-region_rect = Rect2(30, 20, 20, 10)
-
-[node name="Area2D" type="Area2D" parent="exit button" unique_id=1693652347]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="exit button/Area2D" unique_id=1631929543]
-position = Vector2(-10, -10)
-shape = SubResource("RectangleShape2D_v71do")
-
-[connection signal="mouse_entered" from="play button" to="play button" method="_on_mouse_entered"]
+[connection signal="pressed" from="play" to="play" method="_on_play_pressed"]
+[connection signal="pressed" from="options" to="options" method="_on_options_pressed"]
+[connection signal="pressed" from="exit" to="exit" method="_on_exit_pressed"]

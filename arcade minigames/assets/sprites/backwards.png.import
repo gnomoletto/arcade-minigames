@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bny7anm03fwty"
-path="res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"
+uid="uid://cow1b3sfnmk7n"
+path="res://.godot/imported/backwards.png-ec7421f74a9eab7378cf7a06e849cbcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cabinato.png"
-dest_files=["res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"]
+source_file="res://assets/sprites/backwards.png"
+dest_files=["res://.godot/imported/backwards.png-ec7421f74a9eab7378cf7a06e849cbcd.ctex"]
 
 [params]
 

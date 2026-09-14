@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bny7anm03fwty"
-path="res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"
+uid="uid://dabmndj2kdopq"
+path="res://.godot/imported/personaggio.png-84790680875cf7576bf110ff2320cd4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cabinato.png"
-dest_files=["res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"]
+source_file="res://assets/sprites/personaggio.png"
+dest_files=["res://.godot/imported/personaggio.png-84790680875cf7576bf110ff2320cd4c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bny7anm03fwty"
-path="res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"
+uid="uid://67grtevm134b"
+path="res://.godot/imported/prova cabinato.png-b5d222404c9887fc8fc174c61a502fa6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cabinato.png"
-dest_files=["res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"]
+source_file="res://assets/sprites/prova cabinato.png"
+dest_files=["res://.godot/imported/prova cabinato.png-b5d222404c9887fc8fc174c61a502fa6.ctex"]
 
 [params]
 

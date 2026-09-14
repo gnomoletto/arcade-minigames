@@ -1,16 +1,21 @@
 [gd_scene format=3 uid="uid://cr83mdmnweiaq"]
 
 [ext_resource type="PackedScene" uid="uid://bgaqm8ofe133x" path="res://assets/scenes/arcade_room.tscn" id="1_200xw"]
+[ext_resource type="PackedScene" uid="uid://cswk516g0i0re" path="res://assets/scenes/cabinato.tscn" id="2_3h4wf"]
 [ext_resource type="PackedScene" uid="uid://bv7im66owf4sl" path="res://assets/scenes/main_menu.tscn" id="2_mh6p6"]
+[ext_resource type="PackedScene" uid="uid://bsji4g2sug243" path="res://assets/scenes/character_body_2d.tscn" id="3_mh6p6"]
 
 [node name="Node2D" type="Node2D" unique_id=807835721]
 
 [node name="arcade room" parent="." unique_id=2036437118 instance=ExtResource("1_200xw")]
 
-[node name="main menu" parent="." unique_id=1382200650 instance=ExtResource("2_mh6p6")]
-position = Vector2(0, 8)
+[node name="cabinato" parent="." unique_id=1824453205 instance=ExtResource("2_3h4wf")]
+position = Vector2(-79, -13)
 
-[node name="Camera2D" type="Camera2D" parent="main menu" unique_id=1791851889]
-position = Vector2(0, -8)
-scale = Vector2(0.5016793, 0.0031219635)
-zoom = Vector2(5.88, 6.36)
+[node name="CharacterBody2D" parent="." unique_id=1382680681 instance=ExtResource("3_mh6p6")]
+position = Vector2(-83, 31)
+
+[node name="main menu" parent="." unique_id=982102240 instance=ExtResource("2_mh6p6")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=783512190]
+zoom = Vector2(5.765, 6.24)

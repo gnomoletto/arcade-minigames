@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bny7anm03fwty"
-path="res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"
+uid="uid://w6hcogbv1lqq"
+path="res://.godot/imported/walk.png-7c517a3770d514d0bd48f1cf606f13a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cabinato.png"
-dest_files=["res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"]
+source_file="res://assets/sprites/walk.png"
+dest_files=["res://.godot/imported/walk.png-7c517a3770d514d0bd48f1cf606f13a7.ctex"]
 
 [params]
 

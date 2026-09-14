@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bny7anm03fwty"
-path="res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"
+uid="uid://f0fyckvr0ftv"
+path="res://.godot/imported/idle left.png-d3223deed808d41025ae88455e4a5940.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cabinato.png"
-dest_files=["res://.godot/imported/cabinato.png-d327ff0a1ad70971fbb6863aba991b8f.ctex"]
+source_file="res://assets/sprites/idle left.png"
+dest_files=["res://.godot/imported/idle left.png-d3223deed808d41025ae88455e4a5940.ctex"]
 
 [params]
 
