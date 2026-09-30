@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cswk516g0i0re"]
 
 [ext_resource type="Script" uid="uid://dbqm007wwyd2" path="res://assets/scripts/interazione.gd" id="1_5hpdt"]
-[ext_resource type="Texture2D" uid="uid://67grtevm134b" path="res://assets/sprites/prova cabinato.png" id="2_bhl8l"]
+[ext_resource type="Texture2D" uid="uid://bny7anm03fwty" path="res://assets/sprites/cabinato.png" id="2_bhl8l"]
 [ext_resource type="Texture2D" uid="uid://cwx3t5dy38eht" path="res://assets/sprites/interact.png" id="3_bhl8l"]
-[ext_resource type="Script" uid="uid://bo7eyaxe0wy8l" path="res://assets/scripts/sprite_2d_2.gd" id="4_fwcj0"]
+[ext_resource type="Script" uid="uid://bqiyylja01ifc" path="res://assets/scenes/area_2d.gd" id="3_fwcj0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_txm3o"]
 size = Vector2(27, 2.5)
@@ -23,17 +23,19 @@ shape = SubResource("RectangleShape2D_txm3o")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1080136848]
 texture = ExtResource("2_bhl8l")
 region_enabled = true
-region_rect = Rect2(0, 0, 19, 26)
+region_rect = Rect2(20, 0, 20, 26)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=739580913]
 position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_mi5wn")
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=240025921]
+[node name="Area2D" type="Area2D" parent="." unique_id=1311522540]
+script = ExtResource("3_fwcj0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Area2D" unique_id=240025921]
 position = Vector2(0, -20.000002)
 scale = Vector2(0.6133888, 0.6133888)
 texture = ExtResource("3_bhl8l")
-script = ExtResource("4_fwcj0")
 
 [connection signal="body_entered" from="interazione" to="interazione" method="_on_body_entered"]
 [connection signal="body_exited" from="interazione" to="interazione" method="_on_body_exited"]

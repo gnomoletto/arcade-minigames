@@ -10,7 +10,7 @@
 [node name="arcade room" parent="." unique_id=2036437118 instance=ExtResource("1_200xw")]
 
 [node name="cabinato" parent="." unique_id=1824453205 instance=ExtResource("2_3h4wf")]
-position = Vector2(-79, -13)
+position = Vector2(-78, -16)
 
 [node name="CharacterBody2D" parent="." unique_id=1382680681 instance=ExtResource("3_mh6p6")]
 position = Vector2(-83, 31)

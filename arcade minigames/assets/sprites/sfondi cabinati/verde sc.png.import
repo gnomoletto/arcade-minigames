@@ -2,21 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxuvdivto2h0m"
-path="res://.godot/imported/macchine.png-fd5ed1806485e48955a12c3d389e2411.ctex"
+uid="uid://baedgscscxq8u"
+path="res://.godot/imported/verde sc.png-5d61f6ff0fbc9e291f8df4b080dd460a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/macchine.png"
-dest_files=["res://.godot/imported/macchine.png-fd5ed1806485e48955a12c3d389e2411.ctex"]
+source_file="res://assets/sprites/sfondi cabinati/verde sc.png"
+dest_files=["res://.godot/imported/verde sc.png-5d61f6ff0fbc9e291f8df4b080dd460a.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
+compress/high_quality_mode=0
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0

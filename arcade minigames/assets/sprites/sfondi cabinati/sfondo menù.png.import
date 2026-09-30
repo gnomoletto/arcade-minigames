@@ -2,21 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd5loanit4w8w"
-path="res://.godot/imported/strada.png-9ec04cc5a30dcd5e4de8cc116aa1b1d3.ctex"
+uid="uid://ch10vfijtkehe"
+path="res://.godot/imported/sfondo menù.png-ed67f37056ae335e605e40e6e1cde093.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/strada.png"
-dest_files=["res://.godot/imported/strada.png-9ec04cc5a30dcd5e4de8cc116aa1b1d3.ctex"]
+source_file="res://assets/sprites/sfondi cabinati/sfondo menù.png"
+dest_files=["res://.godot/imported/sfondo menù.png-ed67f37056ae335e605e40e6e1cde093.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
+compress/high_quality_mode=0
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0

@@ -2,21 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch10vfijtkehe"
-path="res://.godot/imported/sfondo menù.png-ee9c0e0ae54be83fe884912dc32b85c4.ctex"
+uid="uid://dmff8ad60qty1"
+path="res://.godot/imported/wheel.png-51cdbafa985f1b20969dfcae2485510b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/sfondo menù.png"
-dest_files=["res://.godot/imported/sfondo menù.png-ee9c0e0ae54be83fe884912dc32b85c4.ctex"]
+source_file="res://assets/sprites/change tires/wheel.png"
+dest_files=["res://.godot/imported/wheel.png-51cdbafa985f1b20969dfcae2485510b.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
+compress/high_quality_mode=0
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0

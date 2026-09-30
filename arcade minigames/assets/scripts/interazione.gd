@@ -17,6 +17,10 @@ func _process(_delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		print("enter")
+		Varglobali.interactC1=true
+	
+			
+			
 	
 	pass # Replace with function body.
 
@@ -25,4 +29,5 @@ func _on_body_exited(body: Node2D) -> void:
 	
 	if body.is_in_group("player"):
 		print("exit")
+		Varglobali.interactC1=false
 	pass # Replace with function body.

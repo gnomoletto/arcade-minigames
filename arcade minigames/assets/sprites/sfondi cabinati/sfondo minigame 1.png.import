@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://67grtevm134b"
-path="res://.godot/imported/prova cabinato.png-b5d222404c9887fc8fc174c61a502fa6.ctex"
+uid="uid://dhvsw71odu6wh"
+path="res://.godot/imported/sfondo minigame 1.png-3ed354176877758e7959c632ba2c3b67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/prova cabinato.png"
-dest_files=["res://.godot/imported/prova cabinato.png-b5d222404c9887fc8fc174c61a502fa6.ctex"]
+source_file="res://assets/sprites/sfondi cabinati/sfondo minigame 1.png"
+dest_files=["res://.godot/imported/sfondo minigame 1.png-3ed354176877758e7959c632ba2c3b67.ctex"]
 
 [params]
 
